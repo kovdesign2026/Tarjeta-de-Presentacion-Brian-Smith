@@ -306,7 +306,7 @@ document.getElementById('saveContactBtn').addEventListener('click', () => {
     'N:Smith;Brian;;;',
     'ORG:INNOVA Diseño & Innovación S.A.S.',
     'TITLE:Gerente General',
-    'TEL;TYPE=CELL:+573244063206',
+    'TEL;TYPE=CELL:+573166290395',
     'EMAIL;TYPE=WORK:gerencia.general@innova-soluciones.com',
     'ADR;TYPE=WORK:;;Cra 19 #5 - 42 Bretana;Cali;Valle del Cauca;; Colombia',
     'END:VCARD',
