@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brian Smith — INNOVA</title>
+  <meta name="description" content="Gerente General · INNOVA Diseño & Innovación S.A.S." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <link rel="icon" href="assets/logo3D.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ══ 1. HERO ══ -->
+  <section class="hero-section">
+    <div class="deco-line dl1"></div>
+    <div class="deco-line dl2"></div>
+    <div class="deco-line dl3"></div>
+    <div class="deco-line dl4"></div>
+
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-logo-wrap">
+          <img src="assets/logo.png" alt="INNOVA Diseño & Innovación S.A.S." class="hero-logo" />
+        </div>
+        <h1 class="hero-name">
+          <span class="n-first">Brian</span>
+          <span class="n-last">Smith</span>
+        </h1>
+        <p class="hero-sub">Gerente General</p>
+        <div class="hero-rule"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 2. ACTIONS ══ -->
+  <section class="actions-section">
+    <div class="container">
+      <div class="actions-grid">
+        <a href="tel:+573244063206" class="act-btn">
+          <span class="act-ico blue"><i class="fas fa-phone-alt"></i></span>
+          <span class="act-lbl">Llamar</span>
+        </a>
+        <a href="mailto:gerencia.general@innova-soluciones.com" class="act-btn">
+          <span class="act-ico blue"><i class="fas fa-envelope"></i></span>
+          <span class="act-lbl">Enviar Correo</span>
+        </a>
+        <a href="https://wa.me/573244063206" target="_blank" class="act-btn">
+          <span class="act-ico blue-dark"><i class="fab fa-whatsapp"></i></span>
+          <span class="act-lbl">Enviar WhatsApp</span>
+        </a>
+        <button class="act-btn" id="saveContactBtn">
+          <span class="act-ico blue-dark"><i class="fas fa-address-card"></i></span>
+          <span class="act-lbl">Guardar Contacto</span>
+        </button>
+        <a href="https://wa.me/?text=Conoce%20a%20Brian%20Smith%20de%20INNOVA%20%2B57%20324%20406%203206" target="_blank" class="act-btn">
+          <span class="act-ico blue-dark"><i class="fab fa-whatsapp"></i></span>
+          <span class="act-lbl">Compartir por WhatsApp</span>
+        </a>
+        <button class="act-btn" id="qrBtn">
+          <span class="act-ico blue-dark"><i class="fas fa-qrcode"></i></span>
+          <span class="act-lbl">Compartir con QR</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 2.5 EMPRESA ══ -->
+  <section class="empresa-section">
+    <div class="container">
+      <a href="https://innova-soluciones.com" target="_blank" class="empresa-btn">
+        <span class="empresa-ico"><i class="fas fa-globe"></i></span>
+        <span class="empresa-txt">Visitar página web de la empresa</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ 3. PROFILE ══ -->
+  <section class="profile-section">
+    <div class="container">
+      <div class="profile-card">
+        <div class="profile-photo-wrap">
+          <img
+            src="assets/logo3D.png"
+            alt="Brian Smith"
+            class="profile-photo"
+          />
+        </div>
+        <div class="profile-info">
+          <h2 class="profile-name">Brian Smith</h2>
+          <p class="profile-role">Gerente General</p>
+          <p class="profile-desc">
+            Líder estratégico enfocado en la innovación y excelencia operativa, impulsando el crecimiento y posicionamiento de INNOVA en el mercado global. Comprometido con soluciones de alta calidad para el sector HORECA.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 4. CAROUSEL ══ -->
+  <section class="carousel-section">
+    <div class="container">
+      <p class="section-tag">Galería de Proyectos</p>
+      <div class="carousel-outer">
+        <div class="carousel-track" id="carouselTrack"></div>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- ══ 5. CONTACT ══ -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-chat-ico"><i class="fas fa-comments"></i></div>
+      
+      <ul class="contact-list">
+        <li><a href="tel:+573244063206">
+          <span class="ci"><i class="fas fa-mobile-alt"></i></span>
+          <span>+57 324 406 3206</span>
+        </a></li>
+        <li><a href="mailto:gerencia.general@innova-soluciones.com">
+          <span class="ci"><i class="fas fa-envelope"></i></span>
+          <span>gerencia.general@innova-soluciones.com</span>
+        </a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══ 6. LOCATION ══ -->
+  <section class="location-section">
+    <div class="container">
+      <div class="loc-logo-float-wrap">
+        <img src="assets/logo3D.png" alt="INNOVA" class="loc-logo" />
+      </div>
+      
+      <div class="loc-card">
+        <p class="loc-address">
+          <i class="fas fa-map-marker-alt"></i>
+          Cra 19 #5 - 42, Bretana<br/>
+          Cali, Valle del Cauca – Colombia
+        </p>
+        
+        <div class="map-frame">
+          <iframe
+            title="Ubicación"
+            src="https://maps.google.com/maps?q=Cra+19+%235-42,+Cali,+Colombia&output=embed&z=15"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <a href="https://maps.google.com/?q=Cra+19+%235-42,+Cali,+Colombia" target="_blank" class="btn-maps">
+          <i class="fas fa-location-arrow"></i>
+          Abrir en Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="site-footer">
+    <div class="container">
+      <img src="assets/logo.png" alt="INNOVA" class="footer-logo" />
+      <p>© 2025 INNOVA Diseño &amp; Innovación S.A.S.</p>
+    </div>
+  </footer>
+
+  <!-- ══ QR MODAL ══ -->
+  <div class="modal-overlay" id="qrModal">
+    <div class="modal-box qr-modal-box">
+      <button class="modal-close" id="qrClose"><i class="fas fa-times"></i></button>
+      <div class="qr-header">
+        <p class="modal-title">Compartir Tarjeta</p>
+        <p class="modal-subtitle">Escanea el código para ver mi información</p>
+      </div>
+      
+      <div class="qr-wrapper">
+        <div id="qrCanvas"></div>
+      </div>
+
+      <div class="qr-footer">
+        <p class="modal-url" id="qrUrl"></p>
+        <button id="copyUrlBtn" class="btn-copy">
+          <i class="fas fa-copy"></i> Copiar enlace
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ LIGHTBOX ══ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
+    <button class="lb-prev" id="lbPrev"><i class="fas fa-chevron-left"></i></button>
+    <div class="lb-img-wrap"><img src="" alt="" id="lbImg" /></div>
+    <button class="lb-next" id="lbNext"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <!-- ══ TOAST ══ -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
